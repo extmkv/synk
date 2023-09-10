@@ -73,6 +73,7 @@ done
 # Check if -f is provided (mandatory)
 if [ -z "$file_to_observe" ]; then
   log "error" "-f is mandatory. Please provide the path to the file to observe."
+  usage
 fi
 
 # Check if either -android or -ios is provided
